@@ -1,0 +1,70 @@
+.planos-conteudo {
+  background: $cor-terciaria;
+
+  h1 {
+    @include titulo(2);
+    width: 100%;
+    background: $cor-suporte-1;
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  .plano {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .p-1 {
+      flex: 1;
+
+      h3 {
+        @include titulo(2);
+        color: $cor-suporte-2;
+        text-align: center;
+      }
+
+      sup {
+        @include paragrafo(2);
+        color: $cor-secundaria;
+        text-align: center;
+      }
+    }
+
+    .p-2 {
+      flex: 1;
+
+      a {
+        @include paragrafo(2);
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: $cor-suporte-2;
+        width: 20%;
+        text-align: center;
+      }
+
+      ul {
+        @include lista(1);
+        width: 80%;
+        color: $cor-suporte-3;
+        padding: 1.5em 0;
+        margin: 0 1em;
+        background: $cor-suporte-1;
+        text-align: center;
+        border-left: 3px solid $cor-terciaria;
+        border-bottom: 3px solid $cor-terciaria;
+
+        li {
+          margin-bottom: 0.5em;
+        }
+
+      }
+    }
+  }
+}

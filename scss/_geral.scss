@@ -1,0 +1,6 @@
+body {
+    background: $cor-primaria;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

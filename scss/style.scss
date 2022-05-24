@@ -1,0 +1,20 @@
+//Fontes
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+//Variaveis e mixins
+@import "variaveis";
+@import "mixins";
+
+//Gerais
+@import "normalize";
+@import "reset";
+@import "geral";
+
+//Conteúdo
+@import "header";
+@import "intro";
+@import "servicos";
+@import "planos";
+
+

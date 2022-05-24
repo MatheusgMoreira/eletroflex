@@ -1,0 +1,17 @@
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background: $cor-terciaria;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li a {
+        @include lista(1);
+        margin: 0px .5em;
+    }
+  }
+}
