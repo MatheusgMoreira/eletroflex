@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EletroFlex</title>
 
+    <script>document.documentElement.className += ' js';</script>
+
     <!-- SHORTCUT ICON -->
     <link rel="shortcut icon"
         href="https://cdn-icons.flaticon.com/png/512/3444/premium/3444036.png?token=exp=1653404366~hmac=d91288e459609be0f8bc76ea3d532b62"
@@ -20,10 +22,10 @@
     <header class="container menu-bg">
         <nav class="menu">
             <ul>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Planos</a></li>
-                <li><a href="">Faq</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#faq">Faq</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +49,7 @@
             </div>
         </section>
 
-        <section class="container servicos-bg">
+        <section id="servicos" class="container servicos-bg">
             <div class="servicos-conteudo">
                 <div class="servico">
                     <h3>Direto para sua casa</h3>
@@ -76,7 +78,7 @@
             </div>
         </section>
 
-        <section class="container planos-bg">
+        <section id="planos" class="container planos-bg">
             <div class="planos-conteudo">
                 <h1>Nossos Planos</h1>
                 <div class="plano">
@@ -129,11 +131,54 @@
                 </div>
             </div>
         </section>
+
+        <section id="faq" class="container faq-bg">
+            <div class="faq-conteudo">
+                <h1>Tire suas dúvidas aqui</h1>
+                <hr>
+                <dl class="faq-lista" data-anime="accordion">
+                    <dt>Qual a vantagem dos planos</dt>
+                    <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor deleniti odit necessitatibus nobis atque commodi quis blanditiis earum, illum ex voluptas exercitationem quia quaerat nihil eveniet enim nesciunt rerum tempore.</dd>
+                    <dt>Vale a pena?</dt>
+                    <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, quasi molestiae corporis illum sequi, explicabo ea deleniti repellendus nisi maxime error dignissimos optio deserunt aliquid nulla itaque? Esse, aliquam voluptate?
+                    </dd>
+                    <dt>O diferencial da EletroFlex</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quo cupiditate eveniet quae maiores atque quasi vel, ducimus dolorem minus ad! Aliquam, adipisci doloremque quasi beatae dicta expedita saepe vel!</dd>
+                    <dt>Como funciona a manutenção</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptas nobis sapiente consectetur, totam libero corrupti rerum? Nemo eaque cum esse aperiam dignissimos, sed aliquam quasi quod rem facere! Nemo.
+                    </dd>
+            </div>
+        </section>
+
+        <section id="contato" class="container contato-bg">
+            <div class="contato-conteudo">
+                <div class="contato-titulo">
+                    <h1>Contato</h1>
+                </div>
+                <div class="contato-form">
+                    <form action="">
+                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="E-mail">
+                        <textarea name="" id="" placeholder="Mensagem"></textarea>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+                <div class="contato-rede-sociais">
+                    <span><a href=""><img src="img/facebook.png" alt=""></a></span>
+                    <span><a href=""><img src="img/instagram.png" alt=""></a></span>
+                    <span><a href=""><img src="img/whatsapp.png" alt=""></a></span>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="container footer-bg">
+        <div class="footer-conteudo">
+            <p><a href="https://github.com/NakamuraNP" target="_blank">Matheus Moreira &copy;  - 2022</a></p>
+        </div>
     </footer>
+
+    <script type="module" src="js/script.js"></script>
 </body>
 
 </html>

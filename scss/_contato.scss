@@ -1,0 +1,81 @@
+.contato-bg {
+  display: flex;
+  justify-content: center;
+  background: $cor-terciaria;
+
+  .contato-conteudo {
+    width: 75%;
+    display: flex;
+    padding: 5em;
+
+    .contato-titulo {
+      flex: 1;
+      display: flex;
+      justify-content: right;
+      align-items: flex-start;
+      @include titulo(2);
+      color: $cor-suporte-2;
+    }
+
+    .contato-form {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5em 0;
+
+      form {
+        border: 1px solid $cor-suporte-2;
+        padding: 5em;
+        @include paragrafo(2)
+      }
+
+      input,
+      textarea,
+      button {
+        display: block;
+      }
+
+      input, textarea {
+        margin-bottom: 1em;
+        padding: 0.5em;
+        border: none;
+        border-bottom: 1px solid $cor-secundaria;
+        background: transparent;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      button {
+          margin: 0 auto;
+          padding: .5em;
+          background: $cor-secundaria;
+          border: 1px solid $cor-terciaria;
+          border-radius: 10px;
+          text-transform: uppercase;
+          transition: .3s ease-in-out;
+          &:hover {
+            background: $cor-suporte-2;
+            border: 1px solid $cor-suporte-2;
+            color: $cor-secundaria;
+          }
+      }
+    }
+
+    .contato-rede-sociais {
+      flex: 1;
+      display: flex;
+      justify-content: left;
+      align-items: flex-end;
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
