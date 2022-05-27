@@ -9,6 +9,10 @@
       height: 90vh;
       margin-bottom: -5px;
     }
+
+    @include d(sm) {
+      display: none;
+    }
   }
 
   .intro-texto {
@@ -29,5 +33,16 @@
       margin: 2em 3em;
       text-align: center;
     }
+
+    @include d(sm) {
+      h1 {
+        @include titulo(2);
+        padding: 10px;
+      }
+    }
+  }
+
+  @include d(sm) {
+    flex-direction: column;
   }
 }

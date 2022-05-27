@@ -6,12 +6,26 @@ nav {
 
   ul {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
     li a {
-        @include lista(1);
-        margin: 0px .5em;
+      @include lista(1);
+      margin: 0px 0.5em;
+
+      @include d(sm) {
+        line-height: 1.6;
+        margin: 0px 0px;
+      }
     }
+
+    @include d(sm) {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  @include d(sm) {
+    height: 200px;
   }
 }

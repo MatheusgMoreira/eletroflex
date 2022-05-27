@@ -15,6 +15,10 @@
       align-items: flex-start;
       @include titulo(2);
       color: $cor-suporte-2;
+
+      @include d(sm) {
+        padding: 1em;
+      }
     }
 
     .contato-form {
@@ -27,7 +31,11 @@
       form {
         border: 1px solid $cor-suporte-2;
         padding: 5em;
-        @include paragrafo(2)
+        @include paragrafo(2);
+
+        @include d(sm) {
+          padding: 1em;
+        }
       }
 
       input,
@@ -65,17 +73,42 @@
             color: $cor-secundaria;
           }
       }
+
+      @include d(sm) {
+        flex-direction: column;
+        padding: 0;
+      }
     }
 
     .contato-rede-sociais {
       flex: 1;
       display: flex;
-      justify-content: left;
       align-items: flex-end;
 
       img {
         width: 50%;
       }
+
+      @include d(sm) {
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0px;
+
+        span {
+          text-align: center;
+        }
+      }
     }
+
+    @include d(sm) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  }
+  @include d(sm) {
+    
+    flex-direction: column;
   }
 }

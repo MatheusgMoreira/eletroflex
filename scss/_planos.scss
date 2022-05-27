@@ -19,6 +19,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @include d(sm) {
+        flex-direction: column;
+      }
     }
 
     .p-1 {
@@ -35,6 +39,18 @@
         color: $cor-secundaria;
         text-align: center;
       }
+
+      @include d(sm) {
+        h3,
+        sup {
+          margin: 0.5em;
+          width: 100%;
+        }
+      }
+
+      @include d(sm) {
+        width: 100%;
+      }
     }
 
     .p-2 {
@@ -47,6 +63,14 @@
         color: $cor-suporte-2;
         width: 20%;
         text-align: center;
+
+        @include d(sm) {
+          width: 100%;
+          margin-top: 1em;
+          order: 2;
+          padding-bottom: 1em;
+          border-bottom: 1px solid $cor-suporte-1;
+        }
       }
 
       ul {
@@ -62,9 +86,24 @@
 
         li {
           margin-bottom: 0.5em;
+          width: 100%;
         }
 
+        @include d(sm) {
+          width: 100%;
+          margin: 0;
+          border-left: none;
+        border-bottom: none;
+        }
       }
+
+      @include d(sm) {
+        width: 100%;
+      }
+    }
+
+    @include d(sm) {
+      flex-direction: column;
     }
   }
 }
