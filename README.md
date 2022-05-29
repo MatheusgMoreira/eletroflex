@@ -1,2 +1,2 @@
 # eletroflex
-Site testando alguns elementos criandos em SAAS e utilizando Flexbox
+Site testando alguns elementos criandos em SASS e utilizando Flexbox
